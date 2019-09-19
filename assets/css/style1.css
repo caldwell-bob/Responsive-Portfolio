@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 span.c {
   display: block;
   position: relative;
@@ -11,9 +13,6 @@ span.c {
   text-align: center;
 }
 
-
-
-
 #header_wrapper {
   position: relative;
   top: 0%;
@@ -22,6 +21,7 @@ span.c {
   /* border: 1px solid red; */
   border-bottom: 2px solid #eee;
 }
+
 #header_content {
   overflow: auto;
   color: #fff;
@@ -55,26 +55,26 @@ span.c {
 }
 
 #content {
-    position: relative;
-    bottom: -3em;
-    border: 1px solid #dddddd;
-    /* border: color #dddddd; */
-    background-color: #ffffff;
-    
-    max-width: 960px;
-    height: 45em;
-    margin: auto;
-    overflow: auto;
-    /* padding-top: 5em;  */
-  }
+  position: relative;
+  bottom: -3em;
+  border: 1px solid #dddddd;
+  /* border: color #dddddd; */
+  background-color: #ffffff;
+
+  max-width: 960px;
+  height: 45em;
+  margin: auto;
+  overflow: auto;
+  /* padding-top: 5em;  */
+}
 
 #email_form {
-    margin: 2em;
+  margin: 2em;
 }
 
 #submit_btn {
-    text-align: center;
-    background-color: #4aaaa5;
+  text-align: center;
+  background-color: #4aaaa5;
 }
 
 body {
@@ -111,8 +111,8 @@ h1 {
 }
 
 hr {
-    margin: 1em;
-    color: #777777;
+  margin: 1em;
+  color: #777777;
 }
 
 a {
@@ -122,36 +122,99 @@ a {
 
 a:hover {
   background-color: #4aaaa5;
-  color:  #ffffff;
+  color: #ffffff;
 }
 
 input {
-    width: 100%;
-    height: 25px;
-    margin: 0px, 5px, 5px, 5px;
+  width: 100%;
+  height: 25px;
+  margin: 0px, 5px, 5px, 5px;
 }
 
-input[type=submit] {
-    width: 10em;  height: 3em;
-    text-align: center;
-    background-color: #4aaaa5;
-    color:  #ffffff;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1em;
-    /* padding:  1em; */
+input[type="submit"] {
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1em;
+  /* padding:  1em; */
 }
 
 p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    margin: 2em;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: #777777;
+  margin: 2em;
+}
+/* -------------------------media screens section */
+@media screen and (max-width: 980px) {
+  /* TODO add sticky footer  */
+  #header_wrapper {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    /* background: rgb(224, 32, 32); */
+    /* border: 1px solid red; */
+    background:  rebeccapurple;
+
+    border-bottom: 2px solid #eee;
+  }
 }
 
-/* textarea {
-    cols: 100%;
-} */
-/* p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-} */
+@media screen and (max-width: 768px) {
+  /* TODO add sticky footer  */
+  /* TODO adjust contact message size */
+  #header_wrapper {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background: rgb(131, 32, 224);
+    /* border: 1px solid red; */
+    border-bottom: 2px solid #eee;
+  }
+}
 
+@media screen and (max-width: 640px){
+  /* TODO adjust contact message size */
+  #header_wrapper {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(224, 32, 32);
+    /* border: 1px solid red; */
+    border-bottom: 2px solid #eee;
+  }
+  #header_content {
+    overflow: auto;
+    color: #fff;
+    max-width: 960px;
+    /* background-color: red; */
+    border: 1px solid red;
+    margin: auto;
+  }
+  #name {
+    float: left;
+    width: auto;
+    position: relative;
+    bottom: -1em;
+    padding: 1em;
+    text-decoration-color: white;
+    color: #ffffff;
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: #4aaaa5;
+  }
+  #navigation {
+    /* TODO need this to go beneath name */
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    /* float: left;
+    position: relative; */
+    bottom: -40px;
+    padding: 1em;
+    /* border: 1px solid red; */
+    background: white;
+  }
+}
 
