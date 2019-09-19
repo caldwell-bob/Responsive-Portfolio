@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+
+#name{
+    position: fixed;
+    top: 0;
+    left:  20%;
+    background-color: #4aaaa5;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  nav{
+      background-color:  chartreuse;
+      float:  right;
+      padding: 20px;
+      margin:  20px;
+    
+    }
+  
+  #wrapper{
+    background-image: url("../images/topography.png")
+  }
+
+  header {
+    background-color: red;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    /* max-width: 960px; */
+  }
+
+  content {
+    float: right;
+    max-width: 960px;
+    /* background-color: white; */
+    /* background-image: url("../images/topography.png") */
+
+  }
+
+  footer {
+      border-top: 8px solid #4aaaa5;
+      position: fixed;
+      bottom: 0;
+      /*padding: 20px*/
+  }
